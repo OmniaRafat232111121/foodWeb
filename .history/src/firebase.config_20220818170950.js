@@ -9,7 +9,7 @@ const firebaseConfig = {
   storageBucket: "restaurantapp-aab9f.appspot.com",
   messagingSenderId: "61163628172",
   appId: "1:61163628172:web:5ab02a8813f508f506fda9",
- 
+  measurementId: "G-37N6PYWTX9"
   };
 const app=getApps.length >0 ?getApp() :initializeApp(firebaseConfig)
 
