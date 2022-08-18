@@ -7,7 +7,7 @@ import { getAllFoodItems } from "./utils/firebaseFunctions";
 import { actionType } from "./context/reducer";
 
 const App = () => {
-  const [{foodItems},dispatch]=useStateValue();
+  const [{foodItems},dis]
  const fetchData=async ()=>{
   await getAllFoodItems().then((data)=>{
     dispatchEvent({
@@ -16,9 +16,6 @@ const App = () => {
     })
   })
  }
- useEffect(()=>{
-  fetchData();
- },[])
   return (
     <AnimatePresence exitBeforeEnter>
       <div className="w-screen h-auto flex flex-col bg-primary">

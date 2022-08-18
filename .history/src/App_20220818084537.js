@@ -16,9 +16,7 @@ const App = () => {
     })
   })
  }
- useEffect(()=>{
-  fetchData();
- },[])
+ useEffect
   return (
     <AnimatePresence exitBeforeEnter>
       <div className="w-screen h-auto flex flex-col bg-primary">
