@@ -1,0 +1,25 @@
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  MdFastfood,
+} from "react-icons/md";
+import { categories } from "../utils/data";
+import Loader from "./Loader";
+const CreateContainer = () => {
+  const [title, setTitle] = useState("");
+  const [calories, setCalories] = useState("");
+  const [price, setPrice] = useState("");
+  const [category, setCategory] = useState(null);
+  const [imageAsset, setImageAsset] = useState(null);
+  const [fields, setFields] = useState(false);
+  const [alertStatus, setAlertStatus] = useState("danger");
+  const [msg, setMsg] = useState(null);
+  return (
+ 
+    </div>
+      </div>
+      </div>
+  )
+}
+
+export default CreateContainer;

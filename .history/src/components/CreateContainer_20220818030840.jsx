@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
-  MdFastfood
+  MdFastfood,
 } from "react-icons/md";
 import { categories } from "../utils/data";
 import Loader from "./Loader";
@@ -65,8 +65,12 @@ const CreateContainer = () => {
         </select>
       </div>
 
-     
-
+      <div className="group flex
+       justify-center items-center
+        flex-col border-2 border-dotted border-gray-300 w-full h-225 md:h-340 cursor-pointer rounded-lg">
+    
+    {isLoadi}
+    </div>
     </div>
     </div>
      

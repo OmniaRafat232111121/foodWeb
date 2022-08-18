@@ -65,8 +65,21 @@ const CreateContainer = () => {
         </select>
       </div>
 
-     
-
+      <div className="group flex justify-center items-center flex-col border-2 border-dotted border-gray-300 w-full h-225 md:h-340 cursor-pointer rounded-lg">
+          {isLoading ? (
+            <Loader />
+          ) : (
+            <>
+              {!imageAsset ? (
+                <>
+                  <label className="w-full h-full flex flex-col items-center justify-center cursor-pointer">
+                    <div className="w-full h-full flex flex-col items-center justify-center gap-2">
+                      <MdCloudUpload className="text-gray-500 text-3xl hover:text-gray-700" />
+                      <p className="text-gray-500 hover:text-gray-700">
+                        Click here to upload
+                      </p>
+                    </div>
+    </div>
     </div>
     </div>
      

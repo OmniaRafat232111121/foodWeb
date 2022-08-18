@@ -65,8 +65,12 @@ const CreateContainer = () => {
         </select>
       </div>
 
-     
-
+      <div className="group flex
+       justify-center items-center
+        flex-col border-2 border-dotted border-gray-300 w-full h-225 md:h-340 cursor-pointer rounded-lg">
+    
+    {isLoading ?<Loader/>:<> </>}
+    </div>
     </div>
     </div>
      
